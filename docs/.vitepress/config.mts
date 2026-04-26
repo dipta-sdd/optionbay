@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/',
+  base: '/optionbay',
   title: "OptionBay Documentation",
   description: "Advanced Product Options and Custom Addons for WooCommerce",
 
