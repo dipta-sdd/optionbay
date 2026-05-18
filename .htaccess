@@ -1,0 +1,19 @@
+# ======================================================================
+# CAMPAIGNBAY DOCS - Route all traffic to the VitePress build directory
+# ======================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Condition: If the requested URL does NOT already start with the target directory,
+    #    to prevent an infinite loop.
+    RewriteCond %{REQUEST_URI} !^/docs/.vitepress/dist/
+
+    # 2. Rule: Silently rewrite all other requests to the target directory,
+    #    appending the original request path.
+    RewriteRule ^(.*)$ /docs/.vitepress/dist/$1 [L]
+</IfModule>
+
+# BEGIN WordPress
+# ... (your existing WordPress rules will be below this)
