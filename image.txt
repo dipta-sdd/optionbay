@@ -72,23 +72,112 @@ install-upload.png
   → The "Choose File" button and file name input highlighted
 
 ## fields/choice/select.md
+field-select-general.png
+  → The Addon Builder backend showing the General settings for a Select Dropdown field
+  → Highlight the Label, Description, and Placeholder inputs
+
+field-select-validation.png
+  → The Addon Builder backend showing the Validation settings for a Select Dropdown field
+  → Highlight the "Field is Required" checkbox
+
+field-select-options.png
+  → The Addon Builder backend showing the Options block for a Select Dropdown field
+  → Highlight the Add Option button and 2-3 row options (each with Label, Value, Price Type, Price Amount, Weight)
+
+field-select-pricing.png
+  → The Addon Builder backend showing the Pricing Logic settings for a Select Dropdown field
+  → Highlight the field-level Price Type dropdown
+
+field-select-conditions.png
+  → The Addon Builder backend showing the Conditions tab for a Select Dropdown field
+  → Highlight the Enable Conditional Logic toggle and condition rules
+
+field-select-stock.png
+  → The Addon Builder backend showing the Stock tab for a Select Dropdown field
+  → Highlight the per-option stock linking table
+
 field-select-frontend.png
   → A Select Dropdown field rendered on a WooCommerce product page
   → Show the native <select> element with the dropdown open showing 3–4 options
   → One option should have a price badge visible in the label (e.g. "Large (+$10.00)")
 
 ## fields/choice/radio.md
+field-radio-general.png
+  → The Addon Builder backend showing the General settings for a Radio Buttons field
+  → Highlight the Label and Description inputs
+
+field-radio-validation.png
+  → The Addon Builder backend showing the Validation settings for a Radio Buttons field
+  → Highlight the "Field is Required" checkbox
+
+field-radio-options.png
+  → The Addon Builder backend showing the Options block for a Radio Buttons field
+  → Highlight the Add Option button and 2-3 row options (each with Label, Value, Price Type, Price Amount, Weight)
+
+field-radio-pricing.png
+  → The Addon Builder backend showing the Pricing Logic settings for a Radio Buttons field
+  → Highlight the field-level Price Type dropdown
+
+field-radio-conditions.png
+  → The Addon Builder backend showing the Conditions tab for a Radio Buttons field
+  → Highlight the Enable Conditional Logic toggle and condition rules
+
+field-radio-stock.png
+  → The Addon Builder backend showing the Stock tab for a Radio Buttons field
+  → Highlight the per-option stock linking table
+
 field-radio-frontend.png
   → A Radio Buttons field on a product page
   → Show 3 radio choices side by side or stacked, two with price badges
   → One radio is selected (highlighted / active state)
 
 ## fields/choice/checkbox.md
-field-checkbox-single.png
+field-checkbox-general.png
+  → The Addon Builder backend showing the General settings for a Single Checkbox field
+  → Highlight the Label and Description inputs
+
+field-checkbox-validation.png
+  → The Addon Builder backend showing the Validation settings for a Single Checkbox field
+  → Highlight the "Field is Required" checkbox
+
+field-checkbox-pricing.png
+  → The Addon Builder backend showing the Pricing Logic settings for a Single Checkbox field
+  → Highlight the Price Type dropdown and Price Amount input
+
+field-checkbox-conditions.png
+  → The Addon Builder backend showing the Conditions tab for a Single Checkbox field
+  → Highlight the Enable Conditional Logic toggle and condition rules
+
+field-checkbox-stock.png
+  → The Addon Builder backend showing the Stock tab for a Single Checkbox field
+  → Highlight the Enable Stock Management toggle and Inventory Item selector
+
+field-checkbox-frontend.png
   → A single checkbox toggle on a product page (no options, just one checkbox)
   → Show the label, checkbox, and price badge (e.g. "Add gift message? (+$2.00)")
 
-field-checkbox-multi.png
+## fields/choice/checkboxes.md
+field-checkboxes-general.png
+  → The Addon Builder backend showing the General settings for a Checkboxes field
+  → Highlight the Label and Description inputs
+
+field-checkboxes-validation.png
+  → The Addon Builder backend showing the Validation settings for a Checkboxes field
+  → Highlight the "Field is Required" checkbox
+
+field-checkboxes-options.png
+  → The Addon Builder backend showing the Options block for a Checkboxes field
+  → Highlight the Add Option button and 2-3 row options (each with Label, Value, Price Type, Price Amount, Weight)
+
+field-checkboxes-conditions.png
+  → The Addon Builder backend showing the Conditions tab for a Checkboxes field
+  → Highlight the Enable Conditional Logic toggle and condition rules
+
+field-checkboxes-stock.png
+  → The Addon Builder backend showing the Stock tab for a Checkboxes field
+  → Highlight the Enable Stock Management toggle and Inventory Item selector
+
+field-checkboxes-frontend.png
   → A multi-checkbox group on a product page
   → Show 3–4 checkboxes, each with its own label and price badge
   → Two are checked

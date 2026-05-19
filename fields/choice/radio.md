@@ -11,106 +11,132 @@ Radio buttons display all choices openly — customers click one to select it. U
 - Gift wrapping: No / Yes (+$5.00)
 - Finish type: Matte / Gloss / Satin
 - Delivery speed: Standard / Express (+$10.00)
-- Any single-choice decision with 2–6 options where visual comparison matters
+- Any single-choice decision with 2–6 options where visual comparison matters and open visibility is preferred over a collapsed dropdown.
 
 ---
 
-## General Settings
+## Configuration Settings
 
-| Setting | Description |
-|---------|-------------|
-| **Label** | Group heading shown above all the radio buttons |
-| **Tooltip** | Hover `?` tooltip text |
-| **Description** | Helper text displayed below the group |
-| **Required** | Customer must select one option before add-to-cart |
+When you add a Radio Buttons field in the Addon Builder, you can configure the following inputs across different sections:
 
----
+### General Settings
 
-## Options
+![Backend view of General settings for Radio Buttons field](../../public/img/field-radio-general.png)
 
-Add choices by clicking **Add Option**. Each option has:
+- **Label:** The main heading shown above the entire group of radio buttons. Used to identify the field group in the cart and order details.
+- **Description:** Additional helper text shown below the group. Useful for providing instructions (e.g. "Select one finish").
 
-| Property | Description |
-|----------|-------------|
-| **Label** | Text shown next to the radio button |
-| **Value** | Internal identifier stored in the cart (e.g. `express`) |
-| **Price Type** | Per-option pricing type |
-| **Price Amount** | Price delta for this specific choice |
-| **Weight** | Shipping weight addition when this choice is selected |
+### Options Configuration
 
-Price labels appear automatically next to each radio option label:
-```
-○ Standard shipping
-○ Express shipping  (+ $10.00)
-● Next-day courier  (+ $18.00)
-```
+![Backend view of Options block for Radio Buttons field](../../public/img/field-radio-options.png)
 
----
+Within the main **Options** block, you define the actual radio choices. For each row you add, you can configure:
 
-## Pricing
+- **Label:** The text shown next to the specific radio button (e.g. `Express Delivery`). Shown in the cart, orders, and to the customer.
+- **Value:** The internal, system-friendly value submitted to the server (e.g., `express`). No spaces recommended.
+- **Price Type:** Choose how this specific option is priced (None, Flat Fee, Percentage, Math Formula).
+- **Price Amount:** The surcharge or discount applied when this specific choice is selected.
+- **Weight:** The shipping weight added when this specific option is selected.
 
-Open the **Pricing** tab to apply a charge at the **field level** (the same charge regardless of which option is picked). For different prices per choice, set pricing on each individual option.
+### Validation
 
-| Price Type | Effect |
-|------------|--------|
-| **None** | No charge |
-| **Flat Fee** | Same fixed fee for any choice selected |
-| **Percentage** | % of product base price, same for any choice |
-| **Math Formula** | Advanced formula (less common for radio) |
+![Backend view of Validation settings for Radio Buttons field](../../public/img/field-radio-validation.png)
 
-→ Full reference: [Pricing Strategies](/pricing/index)
+- **Field is Required:** A checkbox toggle. When enabled, the customer is forced to click and select one of the radio buttons before they are allowed to add the product to their cart.
 
 ---
 
-## Layout
+## Layout (Global Settings)
 
-The orientation of choices is controlled globally in **Settings → Options Orientation**:
+**Note:** The orientation of radio button choices is controlled globally across your entire store to ensure design consistency.
+Go to **WooCommerce → OptionBay → Settings** to configure the **Options Orientation**:
+- **Vertical (default):** Choices stack top to bottom.
+- **Horizontal:** Choices sit side by side in a row.
 
-| Setting | Result |
-|---------|--------|
-| **Vertical** *(default)* | Choices stack top to bottom |
-| **Horizontal** | Choices sit side by side |
+---
+
+## Pricing Logic
+
+![Backend view of Pricing settings for Radio Buttons field](../../public/img/field-radio-pricing.png)
+
+You can charge a fee globally for the field, or individually per option. 
+
+**Per-Option Pricing:** (Recommended) Set specific price deltas on individual choices (e.g. "+$10 for Express") inside the Options block.
+
+**Field-Level Pricing:** Open the **Pricing** tab to set a flat charge that applies *no matter which option is selected*. 
+- **Price Type:** (None, Flat Fee, Percentage, Math Formula).
+- **Price Amount / Formula Expression:** The fee applied when the field is answered.
+
+::: info Master the Pricing Engine
+OptionBay includes five different pricing strategies, including dynamic math formulas. We've created a dedicated guide to explain all of them in detail.
+
+**[Read the Ultimate Pricing Guide &rarr;](/pricing/index)**
+:::
 
 ---
 
 ## Conditions
 
-Open the **Conditions** tab to conditionally show or hide this field based on another field's value.
+![Backend view of Conditions tab for Radio Buttons field](../../public/img/field-radio-conditions.png)
 
-**Example:** Show a "Delivery Speed" radio group only after the customer selects "Ship to me" (not "In-store pickup"):
+Open the **Conditions** tab to dynamically show or hide this radio group based on what the customer has selected in other fields. 
 
-| Part | Value |
-|------|-------|
-| Action | Show this field when… |
-| Match | ALL |
-| Field | Fulfilment Method |
-| Operator | == (equals) |
-| Value | `ship` |
+**Available Inputs:**
+- **Enable Conditional Logic:** Toggle to turn conditions on or off.
+- **Action:** Choose whether to *Show* or *Hide* this field when conditions are met.
+- **Match Type:** Choose *ALL* (every rule must match) or *ANY* (at least one rule must match).
+- **Rules:** Define the specific field to watch, the comparison operator, and the value to check against.
 
-→ Full reference: [Field Conditions](/fields/conditions)
+*Example:* Show a "Delivery Speed" radio group only after the customer selects "Ship to me" (and not "In-store pickup") from a previous field.
+
+::: info Learn More About Conditions
+Conditional logic lets you build dynamic, branching forms that adapt as the customer interacts. See the full list of operators and examples in our detailed guide.
+
+**[Read the Field Conditions Reference &rarr;](/fields/conditions)**
+:::
 
 ---
 
 ## Stock
 
-Each individual radio option can be linked to a separate [Global Stock Item](/stocks/index). For example, each delivery speed could draw from a different capacity pool.
+![Backend view of Stock tab for Radio Buttons field](../../public/img/field-radio-stock.png)
 
-→ Full reference: [Linking Options to Stock](/stocks/field-linking)
+Because a Radio Buttons field contains multiple distinct options, stock is typically linked **per option** instead of for the whole field. 
+
+Open the **Stock** tab to link individual choices to their respective inventory pools.
+
+**Available Inputs:**
+- **Enable Stock Management:** Toggle to activate inventory tracking.
+- **Per-Option Links:** You will see a row for every option you created. For each row, you can select an existing Global Stock Item and define the Reduction Mode (Per Item Quantity, Per Line Item, or Formula).
+
+::: tip Global Stock Management
+OptionBay lets you share stock pools across multiple options and products, complete with cart-reservation to prevent overselling.
+
+**[Read the Guide: Linking Options to Stock &rarr;](/stocks/field-linking)**
+:::
 
 ---
 
-## Validation
+## Example & Frontend Display
 
-Server-side validation checks:
-1. A value is present when **Required** is enabled
-2. The submitted value belongs to the defined options list — invalid or forged values are rejected
+To see how this comes together, let's look at a common scenario: **Selecting a delivery speed for a custom order**. You want customers to pick one speed, and charge a different price based on what they choose.
 
----
+You would configure the Radio Buttons field like this:
+- **Label:** `Delivery Speed`
+- **Option 1:** Label `Standard (3-5 days)`, Price Type `None`
+- **Option 2:** Label `Express (2 days)`, Price Type `Flat Fee`, Price Amount `10.00`
+- **Option 3:** Label `Overnight`, Price Type `Flat Fee`, Price Amount `25.00`
 
-## Cart & Order Display
+**Frontend Product Page View:**
+With those settings, here is how the field renders on your product page for customers to interact with:
+
+![Radio button field on a product page showing three choices, with price badges beside two of them, one radio selected](../../public/img/field-radio-frontend.png)
+
+When a customer makes a selection and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing forged submissions.
+
+**Cart & WooCommerce Order View:**
+The field label and the text label of the chosen option (not the system value) will appear clearly on the cart page, checkout, and in your WooCommerce admin order screen exactly like this:
 
 ```
-Delivery Speed:   Express shipping
+Delivery Speed:   Express (2 days)
 ```
-
-The selected option's **label** is shown — not the internal value.

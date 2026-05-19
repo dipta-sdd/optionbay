@@ -1,146 +1,122 @@
-# Checkboxes
+# Checkbox (Single)
 
-The Checkbox field operates in two distinct modes depending on whether you add options to it:
+A single standalone `<input type="checkbox">`. It allows the customer to toggle an option on or off (e.g., opting into a service or agreeing to a term).
 
-| Mode | When | Use for |
-|------|------|---------|
-| **Single Checkbox (Toggle)** | No options defined | Yes/no opt-ins |
-| **Multi-Checkbox Group** | Options defined | Select multiple add-ons |
+![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](../../public/img/field-checkbox-frontend.png)
 
 ---
 
-## Mode 1 — Single Checkbox (Toggle)
+## When to Use
 
-A standalone checkbox — the customer ticks it or leaves it blank.
+- Opt-in extras (e.g. "Add gift wrapping (+$5.00)")
+- Consent forms (e.g. "I agree to the terms and conditions")
+- Confirmation toggles (e.g. "I confirm this is a custom order")
+- Simple Yes/No decisions
 
-![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](../../public/img/field-checkbox-single.png)
+---
 
-**Use cases:**
-- "Add gift message? (+$2.00)"
-- "I confirm this is a custom order"
-- "Include rush processing? (+$15.00)"
+## Configuration Settings
+
+When you add a Checkbox field in the Addon Builder, you can configure the following inputs across different sections:
 
 ### General Settings
 
-| Setting | Description |
-|---------|-------------|
-| **Label** | The text shown beside the checkbox (acts as both label and description) |
-| **Tooltip** | Hover `?` tooltip |
-| **Description** | Additional helper text shown below the checkbox |
-| **Required** | Customer must tick the checkbox (useful for consent fields) |
+![Backend view of General settings for Single Checkbox field](../../public/img/field-checkbox-general.png)
 
-### Value
-- Checked → submits `"1"`
-- Unchecked → submits nothing (field is treated as empty)
+- **Label:** The text shown directly beside the checkbox. This acts as both the field title and the clickable label. Used to identify the field in the cart and order details.
+- **Description:** Additional helper text shown below the checkbox. Useful for providing further clarification.
 
----
+### Validation
 
-## Mode 2 — Multi-Checkbox Group
+![Backend view of Validation settings for Single Checkbox field](../../public/img/field-checkbox-validation.png)
 
-Multiple independent checkboxes — customers can tick any combination.
-
-![A multi-checkbox group showing four add-on options, two of which are ticked, each with a price badge](../../public/img/field-checkbox-multi.png)
-
-**Use cases:**
-- "Add-on accessories": Carrying Case (+$10), Screen Protector (+$5), Warranty (+$20)
-- "Dietary extras" for food orders
-- "Optional services": Installation, Assembly, White-glove delivery
-
-### General Settings
-
-| Setting | Description |
-|---------|-------------|
-| **Label** | Group heading shown above all checkboxes |
-| **Tooltip** | Hover `?` tooltip |
-| **Description** | Helper text below the group |
-| **Required** | At least one checkbox must be selected |
-
-### Options
-
-Each choice has:
-
-| Property | Description |
-|----------|-------------|
-| **Label** | Text next to the checkbox |
-| **Value** | Internal value submitted (e.g. `carrying-case`) |
-| **Price Type** | Per-option pricing type |
-| **Price Amount** | Charge added when this option is ticked |
-| **Weight** | Shipping weight added when ticked |
+- **Field is Required:** A checkbox toggle. When enabled, the customer is strictly forced to tick the checkbox before they are allowed to add the product to their cart. This is highly useful for mandatory consent fields (like Terms & Conditions).
 
 ---
 
-## Pricing
+## Pricing Logic
 
-For a **single checkbox**, set pricing in the **Pricing** tab — the charge applies when the box is checked.
+![Backend view of Pricing settings for Single Checkbox field](../../public/img/field-checkbox-pricing.png)
 
-For a **multi-checkbox**, pricing is set **per option**. Each ticked checkbox adds its own price delta cumulatively.
+You can charge a fee when the customer ticks the checkbox. Configure this in the **Pricing** tab of the field.
 
-| Price Type | Effect |
-|------------|--------|
-| **None** | No charge |
-| **Flat Fee** | Fixed amount per tick |
-| **Percentage** | % of product base price per tick |
-| **Math Formula** | Advanced formula (uncommon for checkboxes) |
+**Available Inputs:**
+- **Price Type:** Choose how the price is calculated.
+  - *None:* No charge.
+  - *Flat Fee:* A fixed charge added when the checkbox is ticked.
+  - *Percentage:* A percentage of the product's base price added when ticked.
+  - *Math Formula:* Advanced pricing logic.
+- **Price Amount / Formula Expression:** Depending on the Price Type selected, enter the dollar amount, percentage value, or the exact math formula.
 
-→ Full reference: [Pricing Strategies](/pricing/index)
+::: info Master the Pricing Engine
+OptionBay includes five different pricing strategies, including dynamic math formulas. We've created a dedicated guide to explain all of them in detail.
+
+**[Read the Ultimate Pricing Guide &rarr;](/pricing/index)**
+:::
 
 ---
 
 ## Conditions
 
-Open the **Conditions** tab to show or hide this field based on another field.
+![Backend view of Conditions tab for Single Checkbox field](../../public/img/field-checkbox-conditions.png)
 
-**Single checkbox example — show "Rush Fee?" only if size is XL:**
+Open the **Conditions** tab to dynamically show or hide this Checkbox based on what the customer has selected in other fields. 
 
-| Part | Value |
-|------|-------|
-| Action | Show this field when… |
-| Match | ALL |
-| Field | Size |
-| Operator | == (equals) |
-| Value | `xl` |
+**Available Inputs:**
+- **Enable Conditional Logic:** Toggle to turn conditions on or off.
+- **Action:** Choose whether to *Show* or *Hide* this field when conditions are met.
+- **Match Type:** Choose *ALL* (every rule must match) or *ANY* (at least one rule must match).
+- **Rules:** Define the specific field to watch, the comparison operator, and the value to check against.
 
-**Watching a multi-checkbox from another field — show a note if "Assembly" is selected:**
+*Example:* Show the "Add Rush Processing?" checkbox only if the customer selects a specific date from a Date Picker.
 
-| Part | Value |
-|------|-------|
-| Action | Show this field when… |
-| Field | Optional Services |
-| Operator | contains |
-| Value | `assembly` |
+::: info Learn More About Conditions
+Conditional logic lets you build dynamic, branching forms that adapt as the customer interacts. See the full list of operators and examples in our detailed guide.
 
-→ Full reference: [Field Conditions](/fields/conditions)
+**[Read the Field Conditions Reference &rarr;](/fields/conditions)**
+:::
 
 ---
 
 ## Stock
 
-Each individual option in a multi-checkbox group can be independently linked to a [Global Stock Item](/stocks/index). Checking that option will deduct from the linked pool.
+![Backend view of Stock tab for Single Checkbox field](../../public/img/field-checkbox-stock.png)
 
-→ Full reference: [Linking Options to Stock](/stocks/field-linking)
+You can link the act of ticking this checkbox to a global inventory pool using the **Stock** tab. 
+
+**Available Inputs:**
+- **Enable Stock Management:** Toggle to activate inventory tracking for this field.
+- **Inventory Item:** Search and select an existing Global Stock Item, or create a new one directly from the dropdown.
+- **Reduction Mode:** Choose how stock is deducted (Per Item Quantity, Per Line Item, or Formula).
+
+::: tip Global Stock Management
+OptionBay lets you share stock pools across multiple options and products, complete with cart-reservation to prevent overselling.
+
+**[Read the Guide: Linking Options to Stock &rarr;](/stocks/field-linking)**
+:::
 
 ---
 
-## Validation
+## Example & Frontend Display
 
-**Single checkbox:** Required validation checks that the value is `"1"` (checked).
+To see how this comes together, let's look at a common scenario: **Offering optional Gift Wrapping**. You want to let customers tick a box to get their item wrapped, and charge a flat $5.00 fee.
 
-**Multi-checkbox:** 
-- Required validation requires at least one option to be ticked
-- All submitted values are checked against the allowed options list — values not in the list are rejected server-side
+You would configure the Checkbox field like this:
+- **Label:** `Add Premium Gift Wrapping?`
+- **Description:** `Your item will be wrapped in premium paper with a ribbon.`
+- **Price Type:** `Flat Fee`
+- **Price Amount:** `5.00`
 
----
+**Frontend Product Page View:**
+With those settings, here is how the field renders on your product page for customers to interact with:
 
-## Cart & Order Display
+![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](../../public/img/field-checkbox-frontend.png)
 
-**Single checkbox:**
+When a customer ticks the box and adds the product to their cart, OptionBay submits the value `"1"` to indicate it was checked. If left unchecked, the field is treated as empty and ignored.
+
+**Cart & WooCommerce Order View:**
+The field label and a "Yes" value will appear clearly on the cart page, checkout, and in your WooCommerce admin order screen exactly like this:
+
 ```
-Add gift message?:   Yes
+Add Premium Gift Wrapping?:   Yes
 ```
-
-**Multi-checkbox:**
-```
-Add-on Accessories:   Carrying Case, Screen Protector
-```
-
-Comma-separated **labels** of all selected options are shown.

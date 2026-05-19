@@ -121,7 +121,8 @@ export default defineConfig({
             items: [
               { text: "Select Dropdown", link: "/fields/choice/select" },
               { text: "Radio Buttons", link: "/fields/choice/radio" },
-              { text: "Checkboxes", link: "/fields/choice/checkbox" },
+              { text: "Checkbox (Single)", link: "/fields/choice/checkbox" },
+              { text: "Checkboxes (Multiple)", link: "/fields/choice/checkboxes" },
               { text: "Image Swatches", link: "/fields/choice/image-swatch" },
               { text: "Color Swatches", link: "/fields/choice/color-swatch" },
             ],
