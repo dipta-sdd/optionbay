@@ -129,8 +129,6 @@ The Option Groups list, Addon Builder, or Settings screen fails to load, showing
    - If the endpoint returns a raw JSON document showing site information, the REST API is functional.
    - If you get a `404 Not Found` error, a `403 Forbidden` error, or are redirected to the homepage, a security plugin or firewall rule is blocking REST access.
 
-   ![Browser window showing the default public output of the WordPress REST API index endpoint](../public/troubleshooting-wp-rest-check.png)
-
 2. **Check Security Plugin Rule Blocks:**
    - Plugins like Wordfence, iThemes Security (Solid Security), or Sucuri have settings to "Restrict REST API access."
    - Disable these settings temporarily to see if OptionBay loads. If it does, whitelist the OptionBay API namespace: `/wp-json/optionbay/v1/`.
@@ -140,8 +138,6 @@ The Option Groups list, Addon Builder, or Settings screen fails to load, showing
    - Go to WordPress Admin **Settings → Permalinks**.
    - Make sure your settings are set to **Post Name** or another structure (the default "Plain" query-parameter style can sometimes conflict with API endpoints).
    - Click the **Save Changes** button at the bottom of the Permalinks page. This flushes and rebuilds your site's rewrite rules, correcting broken endpoint routing.
-
-   ![The WordPress Permalinks settings screen highlighting the Save Changes button](../public/troubleshooting-permalink-settings.png)
 
 4. **Verify User Permissions:**
    - The OptionBay API endpoints require authentication and authorization.

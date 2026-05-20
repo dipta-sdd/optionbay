@@ -22,15 +22,6 @@ When viewing any order containing OptionBay selections, the customer's choices a
 
 ---
 
-## Options in Order Emails
-
-WooCommerce automatically passes all line-item metadata to outgoing emails.
-
-- **Customer Invoices & Receipts:** Customers receive confirmation of their options listed under each product in their order receipt emails.
-- **Admin Notifications:** Store managers see the custom options inside the "New Order" notification emails, ensuring fulfillment teams know what options were selected without opening the WordPress admin.
-- **Third-Party Email Services:** If you use tools like Mailchimp or Klaviyo for WooCommerce transactional emails, they will ingest these options metadata rows automatically.
-
-![A customer HTML receipt email showing the custom options rendered under the product name in the items table](../public/order-email.png)
 
 ---
 

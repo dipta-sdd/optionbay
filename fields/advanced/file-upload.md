@@ -92,27 +92,6 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ---
 
-## Stock
-
-![Backend view of Stock tab for File Upload field](../../public/field-file-stock.png)
-
-File upload fields are not typically linked to inventory, but the setting is available if uploading a file consumes a production slot or machine quota.
-
-Open the **Stock** tab to link the act of uploading a file to an inventory pool.
-
-**Available Inputs:**
-
-- **Enable Stock Management:** Toggle to activate inventory tracking.
-- **Select Pool:** Choose which Global Stock Item to link this field to.
-- **Reduction Mode:** Choose how stock is deducted (Per Item Quantity, Per Line Item, or Formula).
-
-::: tip Global Stock Management
-OptionBay lets you share stock pools across multiple options and products, complete with cart-reservation to prevent overselling.
-
-**[Read the Guide: Linking Fields to Stock &rarr;](/stocks/field-linking)**
-:::
-
----
 
 ## Example & Frontend Display
 
