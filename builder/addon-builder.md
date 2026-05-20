@@ -87,7 +87,7 @@ _Example:_ Apply a "Personalisation" group globally, but exclude the "Gift Cards
 ::: info Learn More About Assignments
 We've created a dedicated guide with advanced examples, edge cases, and troubleshooting tips for assignment rules.
 
-**[Read the Assignment Rules Guide &rarr;](/builder/assignments)**
+**[Read the Assignment Rules Guide &rarr;](/assignments/)**
 :::
 
 ---

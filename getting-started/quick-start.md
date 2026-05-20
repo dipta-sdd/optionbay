@@ -81,7 +81,7 @@ For this quick start, select **"Apply to specific products, categories, or tags"
 ::: info Learn More About Assignments
 Assignment Rules support powerful include/exclude logic. You can target entire categories, exclude individual products, and combine multiple rules.
 
-**[Read the Assignment Rules Guide &rarr;](/builder/assignments)**
+**[Read the Assignment Rules Guide &rarr;](/assignments/)**
 :::
 
 ---
@@ -140,5 +140,5 @@ Now that you've got the basics working, explore more of what OptionBay can do:
 - **[The Addon Builder](/builder/addon-builder)** — Learn the full builder interface: drag-and-drop reordering, duplication, and validation.
 - **[Pricing Strategies](/pricing/index)** — Flat fees, percentages, per-character pricing, and dynamic math formulas.
 - **[Conditional Logic](/fields/conditions)** — Show or hide fields based on what the customer has selected.
-- **[Assignment Rules](/builder/assignments)** — Advanced include/exclude targeting with categories, tags, and product-level overrides.
+- **[Assignment Rules](/assignments/)** — Advanced include/exclude targeting with categories, tags, and product-level overrides.
 - **[Global Stock Management](/stocks/index)** — Limit how many times a specific option can be ordered across your entire store.
