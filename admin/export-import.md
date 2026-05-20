@@ -4,7 +4,7 @@ OptionBay features a built-in migration utility that can export your configurati
 
 You can access the Export & Import tools from the top toolbar on the main [Option Groups list](/builder/option-groups) dashboard. Clicking **Export Data** or **Import Data** expands their respective panels inline directly above your list of groups.
 
-![The Export panel expanded inline on the Option Groups page, showing entity checkboxes and a Download JSON button](../public/export-panel.png)
+![The Export panel expanded inline on the Option Groups page, showing entity checkboxes and a Download JSON button](/public/export-panel.png)
 
 ---
 
@@ -81,7 +81,7 @@ The exported file is a standard JSON object containing root keys for each select
 
 You can upload a previously exported `.json` configuration file or paste raw JSON directly to import OptionBay entities.
 
-![The Import panel with a textarea for pasting JSON and a file upload button](../public/import-panel.png)
+![The Import panel with a textarea for pasting JSON and a file upload button](/public/import-panel.png)
 
 ### How to Import
 
@@ -93,7 +93,7 @@ You can upload a previously exported `.json` configuration file or paste raw JSO
 4. Click the **Import** button.
 5. OptionBay validates the JSON structure. If successful, a toast notification confirms the counts of successfully imported items.
 
-![Success toast confirming data was imported successfully](../public/import-success-toast.png)
+![Success toast confirming data was imported successfully](/public/import-success-toast.png)
 
 ### What Happens During Import
 

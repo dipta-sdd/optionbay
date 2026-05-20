@@ -2,7 +2,7 @@
 
 Manage site-wide display preferences, stylesheet values, and maintenance workflows for OptionBay. Access these settings by navigating to **WooCommerce → Settings → Products → Options** in your WordPress admin dashboard.
 
-![OptionBay Settings page showing General Settings and System & Maintenance sections](../public/settings-page.png)
+![OptionBay Settings page showing General Settings and System & Maintenance sections](/public/settings-page.png)
 
 Settings are structured into tabs and sections. To apply your adjustments, click the native WooCommerce **Save changes** button at the top or bottom of the settings screen.
 
@@ -63,7 +63,7 @@ Sets the CSS border-radius applied to the image swatch thumbnails:
 - **Square Corners:** Set to `0` for sharp, square image tiles.
 - **Circular Swatches:** Set to `50%` for circular thumbnail icons.
 
-![The General Settings section highlighting swatch dimensions and roundness controls](../public/settings-swatch-size-roundness.png)
+![The General Settings section highlighting swatch dimensions and roundness controls](/public/settings-swatch-size-roundness.png)
 
 ::: tip CSS Syntax
 All size, font, and roundness settings accept standard CSS units (`px`, `rem`, `em`, `%`, `inherit`). You do not need to wrap your values in quotation marks — simply type the value and its unit (e.g. `1.2rem`).
@@ -75,7 +75,7 @@ All size, font, and roundness settings accept standard CSS units (`px`, `rem`, `
 
 Configure internal developer logging and control plugin deletion behaviors.
 
-![The System & Maintenance settings area highlighting the Debug Mode toggle and the Delete Data on Uninstall warning checkbox](../public/settings-system-maintenance.png)
+![The System & Maintenance settings area highlighting the Debug Mode toggle and the Delete Data on Uninstall warning checkbox](/public/settings-system-maintenance.png)
 
 ### Debug Mode
 

@@ -2,7 +2,7 @@
 
 **Assignments** control which products an Option Group appears on. Each group can have multiple assignment rules that combine to determine its visibility across your store.
 
-![Assignment Rules panel inside the Addon Builder showing global, category, product, and tag rules in a table](../public/assignments-panel.png)
+![Assignment Rules panel inside the Addon Builder showing global, category, product, and tag rules in a table](/public/assignments-panel.png)
 
 ---
 
@@ -33,7 +33,7 @@ You can add multiple rules of any type. OptionBay evaluates them all together.
 
 Inside the Addon Builder, open the **Assignment Rules** section. Click **Add Rule** to add a new row.
 
-![Assignment Rules panel with the Add Rule button and a dropdown to choose target type](../public/assignments-add-rule.png)
+![Assignment Rules panel with the Add Rule button and a dropdown to choose target type](/public/assignments-add-rule.png)
 
 For each rule, configure:
 

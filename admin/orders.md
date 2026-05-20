@@ -14,14 +14,13 @@ Upon successful checkout, this session data is transformed into permanent **orde
 
 When viewing any order containing OptionBay selections, the customer's choices are displayed directly below the product name in the **Order Items** admin panel:
 
-![WooCommerce order screen showing an order line item with OptionBay custom options listed beneath the product name](../public/order-line-item.png)
+![WooCommerce order screen showing an order line item with OptionBay custom options listed beneath the product name](/public/order-line-item.png)
 
 - **Text, Area, Number, and Email fields:** Display the field's label followed by the customer's typed value (e.g. `Engraving Text: Happy Birthday!`).
 - **Choice-based fields (Dropdowns, Radios, Checkboxes, Swatches):** Display the field's label followed by the text label of the selected choice (e.g. `Gift Wrap?: Yes`).
 - **File Upload fields:** Display the field's label followed by a clickable, secure URL pointing directly to the uploaded file in your WordPress uploads folder (e.g. `File Upload: https://site.com/wp-content/uploads/optionbay/design.png`).
 
 ---
-
 
 ---
 
@@ -32,7 +31,7 @@ Before the order is completed, OptionBay displays selected options on frontend t
 - **Cart Page:** Each selected option appears as a formatted list row beneath the product title in the cart table.
 - **Checkout Page:** The option rows are mirrored in the checkout order review table, giving the customer a final chance to verify their selections before paying.
 
-![WooCommerce cart page with OptionBay selections listed under the product](../public/cart-item-options.png)
+![WooCommerce cart page with OptionBay selections listed under the product](/public/cart-item-options.png)
 
 ---
 

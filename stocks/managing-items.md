@@ -12,7 +12,7 @@ The inventory manager is a centralized dashboard accessible from your main Optio
 2. Click the **View Inventory** button (📦 icon) located in the top-right controls toolbar.
 3. The inventory manager opens as an overlay modal, allowing you to manage all global stock pools without leaving the page.
 
-![The inventory modal opened from the Option Groups list, showing the table and Add Item button](../public/inventory-modal-open.png)
+![The inventory modal opened from the Option Groups list, showing the table and Add Item button](/public/inventory-modal-open.png)
 
 ---
 
@@ -87,7 +87,7 @@ You do not need to pre-create all your inventory pools in the modal first. Optio
 
 You can configure the starting stock count or enable backorders for this newly created item later by opening the main inventory modal.
 
-![Stock tab inside the Addon Builder showing the inventory search input with a "Create new" option in the dropdown](../public/inventory-create-inline.png)
+![Stock tab inside the Addon Builder showing the inventory search input with a "Create new" option in the dropdown](/public/inventory-create-inline.png)
 
 ---
 

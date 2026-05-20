@@ -2,7 +2,7 @@
 
 Color Swatches present choices as small colored squares or circles that customers click to select. Only one swatch can be active at a time (single choice). Each swatch maps to a hex color value; the visual color is rendered automatically by CSS.
 
-![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend-only.png)
+![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](/public/field-color-swatch-frontend-only.png)
 
 ---
 
@@ -21,14 +21,14 @@ When you add a Color Swatch field in the Addon Builder, you can configure the fo
 
 ### General Settings
 
-![Backend view of General settings for Color Swatch field](../../public/field-color-swatch-general.png)
+![Backend view of General settings for Color Swatch field](/public/field-color-swatch-general.png)
 
 - **Label:** The main heading shown above the swatches. Used to identify the field group in the cart and order details.
 - **Description:** Additional helper text shown below the swatches. Useful for providing instructions.
 
 ### Options Configuration
 
-![Backend view of Options block for Color Swatch field](../../public/field-color-swatch-options.png)
+![Backend view of Options block for Color Swatch field](/public/field-color-swatch-options.png)
 
 Within the main **Options** block, you define the actual color choices by clicking the **Add Choice** button. For each choice card in the list, you have access to inline inputs and an expandable settings panel.
 
@@ -51,7 +51,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ### Validation
 
-![Backend view of Validation settings for Color Swatch field](../../public/field-color-swatch-validation.png)
+![Backend view of Validation settings for Color Swatch field](/public/field-color-swatch-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to click and select a color before they are allowed to add the product to their cart.
 
@@ -59,17 +59,17 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ## Display Style
 
-![Backend view of Display Style settings for Color Swatch field](../../public/field-color-swatch-display-style.png)
+![Backend view of Display Style settings for Color Swatch field](/public/field-color-swatch-display-style.png)
 
 You can choose how swatches are presented visually on the frontend product page:
 
 - **Swatch Only:** Renders only the colored box or circle. The swatch name appears as a tooltip on hover.
 
-  ![Frontend view of Swatch Only Display Style](../../public/field-color-swatch-frontend-only.png)
+  ![Frontend view of Swatch Only Display Style](/public/field-color-swatch-frontend-only.png)
 
 - **Swatch + Label:** Renders both the colored box/circle and its descriptive text label.
 
-  ![Frontend view of Swatch + Label Display Style](../../public/field-color-swatch-frontend-label.png)
+  ![Frontend view of Swatch + Label Display Style](/public/field-color-swatch-frontend-label.png)
 
 ---
 
@@ -102,7 +102,7 @@ OptionBay includes multiple pricing strategies, including dynamic math formulas.
 
 ## Conditions
 
-![Backend view of Conditions tab for Color Swatch field](../../public/field-color-swatch-conditions.png)
+![Backend view of Conditions tab for Color Swatch field](/public/field-color-swatch-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this swatch group based on what the customer has selected in other fields.
 
@@ -125,7 +125,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Color Swatch field](../../public/field-color-swatch-stock.png)
+![Backend view of Stock tab for Color Swatch field](/public/field-color-swatch-stock.png)
 
 Because a Color Swatch field contains multiple distinct options, stock is linked **per option** instead of for the whole field.
 
@@ -165,7 +165,7 @@ You would configure the Color Swatch field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend-only.png)
+![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](/public/field-color-swatch-frontend-only.png)
 
 When a customer clicks a swatch and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing forged submissions.
 

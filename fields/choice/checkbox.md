@@ -2,7 +2,7 @@
 
 A single standalone `<input type="checkbox">`. It allows the customer to toggle an option on or off (e.g., opting into a service or agreeing to a term).
 
-![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](../../public/field-checkbox-frontend.png)
+![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](/public/field-checkbox-frontend.png)
 
 ---
 
@@ -21,14 +21,14 @@ When you add a Checkbox field in the Addon Builder, you can configure the follow
 
 ### General Settings
 
-![Backend view of General settings for Single Checkbox field](../../public/field-checkbox-general.png)
+![Backend view of General settings for Single Checkbox field](/public/field-checkbox-general.png)
 
 - **Label:** The text shown directly beside the checkbox. This acts as both the field title and the clickable label. Used to identify the field in the cart and order details.
 - **Description:** Additional helper text shown below the checkbox. Useful for providing further clarification.
 
 ### Validation
 
-![Backend view of Validation settings for Single Checkbox field](../../public/field-checkbox-validation.png)
+![Backend view of Validation settings for Single Checkbox field](/public/field-checkbox-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is strictly forced to tick the checkbox before they are allowed to add the product to their cart. This is highly useful for mandatory consent fields (like Terms & Conditions).
 
@@ -36,7 +36,7 @@ When you add a Checkbox field in the Addon Builder, you can configure the follow
 
 ## Pricing Logic
 
-![Backend view of Pricing settings for Single Checkbox field](../../public/field-checkbox-pricing.png)
+![Backend view of Pricing settings for Single Checkbox field](/public/field-checkbox-pricing.png)
 
 You can charge a fee when the customer ticks the checkbox. Configure this in the **Pricing** tab of the field.
 
@@ -59,7 +59,7 @@ OptionBay includes five different pricing strategies, including dynamic math for
 
 ## Conditions
 
-![Backend view of Conditions tab for Single Checkbox field](../../public/field-checkbox-conditions.png)
+![Backend view of Conditions tab for Single Checkbox field](/public/field-checkbox-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this Checkbox based on what the customer has selected in other fields.
 
@@ -82,7 +82,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Single Checkbox field](../../public/field-checkbox-stock.png)
+![Backend view of Stock tab for Single Checkbox field](/public/field-checkbox-stock.png)
 
 You can link the act of ticking this checkbox to a global inventory pool using the **Stock** tab.
 
@@ -114,7 +114,7 @@ You would configure the Checkbox field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](../../public/field-checkbox-frontend.png)
+![A single checkbox toggle on a product page: "Add gift message? (+$2.00)" with the checkbox ticked](/public/field-checkbox-frontend.png)
 
 When a customer ticks the box and adds the product to their cart, OptionBay submits the value `"1"` to indicate it was checked. If left unchecked, the field is treated as empty and ignored.
 

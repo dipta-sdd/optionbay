@@ -2,7 +2,7 @@
 
 Image Swatches present choices as small clickable thumbnail images. Only one image can be selected at a time (single choice). Use them when a photograph or texture preview communicates a choice better than a plain color or text label.
 
-![Image Swatch field on a product page showing 4 fabric texture thumbnails, one highlighted with a selection border](../../public/field-image-swatch-frontend-label.png)
+![Image Swatch field on a product page showing 4 fabric texture thumbnails, one highlighted with a selection border](/public/field-image-swatch-frontend-label.png)
 
 ---
 
@@ -21,14 +21,14 @@ When you add an Image Swatch field in the Addon Builder, you can configure the f
 
 ### General Settings
 
-![Backend view of General settings for Image Swatch field](../../public/field-image-swatch-general.png)
+![Backend view of General settings for Image Swatch field](/public/field-image-swatch-general.png)
 
 - **Label:** The main heading shown above the swatches. Used to identify the field group in the cart and order details.
 - **Description:** Additional helper text shown below the swatches. Useful for providing instructions.
 
 ### Options Configuration
 
-![Backend view of Options block for Image Swatch field](../../public/field-image-swatch-options.png)
+![Backend view of Options block for Image Swatch field](/public/field-image-swatch-options.png)
 
 Within the main **Options** block, you define the actual image choices by clicking the **Add Choice** button. For each choice card in the list, you have access to inline inputs and an expandable settings panel.
 
@@ -51,7 +51,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ### Validation
 
-![Backend view of Validation settings for Image Swatch field](../../public/field-image-swatch-validation.png)
+![Backend view of Validation settings for Image Swatch field](/public/field-image-swatch-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to click and select an image thumbnail before they are allowed to add the product to their cart.
 
@@ -59,17 +59,17 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ## Display Style
 
-![Backend view of Display Style settings for Image Swatch field](../../public/field-image-swatch-display-style.png)
+![Backend view of Display Style settings for Image Swatch field](/public/field-image-swatch-display-style.png)
 
 You can choose how swatches are presented visually on the frontend product page:
 
 - **Swatch Only:** Renders only the thumbnail box. The choice name appears as a tooltip on hover.
 
-  ![Frontend view of Swatch Only Display Style](../../public/field-image-swatch-frontend-only.png)
+  ![Frontend view of Swatch Only Display Style](/public/field-image-swatch-frontend-only.png)
 
 - **Swatch + Label:** Renders both the thumbnail box and its descriptive text label.
 
-  ![Frontend view of Swatch + Label Display Style](../../public/field-image-swatch-frontend-label.png)
+  ![Frontend view of Swatch + Label Display Style](/public/field-image-swatch-frontend-label.png)
 
 ---
 
@@ -102,7 +102,7 @@ OptionBay includes multiple pricing strategies, including dynamic math formulas.
 
 ## Conditions
 
-![Backend view of Conditions tab for Image Swatch field](../../public/field-image-swatch-conditions.png)
+![Backend view of Conditions tab for Image Swatch field](/public/field-image-swatch-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this swatch group based on what the customer has selected in other fields.
 
@@ -125,7 +125,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Image Swatch field](../../public/field-image-swatch-stock.png)
+![Backend view of Stock tab for Image Swatch field](/public/field-image-swatch-stock.png)
 
 Because an Image Swatch field contains multiple distinct options, stock is linked **per option** instead of for the whole field.
 
@@ -165,7 +165,7 @@ You would configure the Image Swatch field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![Image Swatch field on a product page showing 4 fabric texture thumbnails, one highlighted with a selection border](../../public/field-image-swatch-frontend-label.png)
+![Image Swatch field on a product page showing 4 fabric texture thumbnails, one highlighted with a selection border](/public/field-image-swatch-frontend-label.png)
 
 When a customer clicks an image thumbnail and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing forged submissions.
 

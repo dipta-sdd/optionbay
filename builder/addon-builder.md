@@ -2,7 +2,7 @@
 
 The **Addon Builder** is the visual editor where you create and configure Option Groups — collections of custom fields that appear on your WooCommerce product pages. Open it by clicking **Add new group** on the [Option Groups list](/builder/option-groups), or by clicking an existing group's title to edit it.
 
-![Full Addon Builder screen showing the title input, fields list, assignment rules panel, and the field-type sidebar on the right](../public/addon-builder-full.png)
+![Full Addon Builder screen showing the title input, fields list, assignment rules panel, and the field-type sidebar on the right](/public/addon-builder-full.png)
 
 ---
 
@@ -10,7 +10,7 @@ The **Addon Builder** is the visual editor where you create and configure Option
 
 The Addon Builder is divided into distinct areas, each serving a specific purpose. Understanding the layout will help you navigate the builder efficiently.
 
-![Full Addon Builder screen annotated](../public/addon-builder-full.png)
+![Full Addon Builder screen annotated](/public/addon-builder-full.png)
 
 - **Header Bar** _(top):_ Contains the "Back to List" navigation link, the Publish/Draft status toggle, and the Save button.
 - **Group Title** _(below header):_ A large text input where you name your Option Group.
@@ -26,7 +26,7 @@ On smaller screens where the sidebar scrolls out of view, OptionBay displays a *
 
 ## Header Bar
 
-![The Addon Builder header bar showing the Back to List link, status toggle, and Save button](../public/addon-builder-header.png)
+![The Addon Builder header bar showing the Back to List link, status toggle, and Save button](/public/addon-builder-header.png)
 
 The header bar is always visible at the top of the builder and contains three key controls:
 
@@ -44,7 +44,7 @@ The header bar is always visible at the top of the builder and contains three ke
 
 ## Setting the Group Title
 
-![The Group Title input field with a descriptive name typed in](../public/addon-builder-title.png)
+![The Group Title input field with a descriptive name typed in](/public/addon-builder-title.png)
 
 Type the group's name into the large title input at the top. This is an **internal label for admin use only** — it is never shown to customers on the product page.
 
@@ -59,7 +59,7 @@ The group title is **required**. You cannot save without one. If you try to save
 
 ## Assignment Rules
 
-![The Assignment Rules section showing Visibility, Reach, and Exceptions](../public/addon-builder-assignment-rules.png)
+![The Assignment Rules section showing Visibility, Reach, and Exceptions](/public/addon-builder-assignment-rules.png)
 
 The Assignment Rules panel controls **where** this option group appears on your store. It is organized into three logical sections:
 
@@ -94,7 +94,7 @@ We've created a dedicated guide with advanced examples, edge cases, and troubles
 
 ## Add Fields Sidebar
 
-![The Add Fields sidebar showing the 2-column grid of field type buttons](../public/addon-builder-sidebar.png)
+![The Add Fields sidebar showing the 2-column grid of field type buttons](/public/addon-builder-sidebar.png)
 
 The right-hand sidebar contains a **2-column grid** of buttons — one for every field type OptionBay supports. Click any button to instantly add a new field of that type to the bottom of the Fields List.
 
@@ -127,7 +127,7 @@ The Fields List is the main working area of the builder. Every field you add app
 
 ### Collapsed View (Default)
 
-![Multiple field rows in their default collapsed state](../public/addon-builder-field-collapsed.png)
+![Multiple field rows in their default collapsed state](/public/addon-builder-field-collapsed.png)
 
 Each collapsed field row shows:
 
@@ -141,12 +141,12 @@ Each collapsed field row shows:
 ::: tip Reordering Fields
 The order of the fields in the builder is **exactly** the order they appear on the product page. Drag and drop to rearrange them until the layout feels right.
 
-![Dragging a field row to reorder within the fields list](../public/addon-builder-drag-reorder.png)
+![Dragging a field row to reorder within the fields list](/public/addon-builder-drag-reorder.png)
 :::
 
 ### Expanded View (Configuration)
 
-![An expanded field row showing all configuration tabs](../public/addon-builder-field-expanded.png)
+![An expanded field row showing all configuration tabs](/public/addon-builder-field-expanded.png)
 
 Click on any field row (or its chevron) to expand its full configuration panel. The panel is organized into tabs. The exact tabs available depend on the field type, but the common structure is:
 

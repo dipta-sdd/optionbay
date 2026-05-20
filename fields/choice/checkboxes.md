@@ -2,7 +2,7 @@
 
 A group of independent `<input type="checkbox">` elements. Customers can tick any combination of options (zero, one, or many).
 
-![A multi-checkbox group showing four add-on options, two of which are ticked, each with a price badge](../../public/field-checkboxes-frontend.png)
+![A multi-checkbox group showing four add-on options, two of which are ticked, each with a price badge](/public/field-checkboxes-frontend.png)
 
 ---
 
@@ -21,14 +21,14 @@ When you add a Checkboxes field in the Addon Builder, you can configure the foll
 
 ### General Settings
 
-![Backend view of General settings for Checkboxes field](../../public/field-checkboxes-general.png)
+![Backend view of General settings for Checkboxes field](/public/field-checkboxes-general.png)
 
 - **Label:** The main heading shown above the entire group of checkboxes. Used to identify the field group in the cart and order details.
 - **Description:** Additional helper text shown below the group. Useful for providing instructions (e.g. "Select all that apply").
 
 ### Options Configuration
 
-![Backend view of Options block for Checkboxes field](../../public/field-checkboxes-options.png)
+![Backend view of Options block for Checkboxes field](/public/field-checkboxes-options.png)
 
 Within the main **Options** block, you define the actual checkbox choices by clicking the **Add Choice** button. For each choice card in the list, you have access to inline inputs and an expandable settings panel.
 
@@ -50,7 +50,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ### Validation
 
-![Backend view of Validation settings for Checkboxes field](../../public/field-checkboxes-validation.png)
+![Backend view of Validation settings for Checkboxes field](/public/field-checkboxes-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to tick **at least one** option from the group before they are allowed to add the product to their cart.
 
@@ -58,7 +58,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ## Conditions
 
-![Backend view of Conditions tab for Checkboxes field](../../public/field-checkboxes-conditions.png)
+![Backend view of Conditions tab for Checkboxes field](/public/field-checkboxes-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this entire group of checkboxes based on what the customer has selected in other fields.
 
@@ -81,7 +81,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Checkboxes field](../../public/field-checkboxes-stock.png)
+![Backend view of Stock tab for Checkboxes field](/public/field-checkboxes-stock.png)
 
 Because a Checkboxes field contains multiple distinct options, stock is linked **per option** instead of for the whole field.
 
@@ -119,7 +119,7 @@ You would configure the Checkboxes field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![A multi-checkbox group showing four add-on options, two of which are ticked, each with a price badge](../../public/field-checkboxes-frontend.png)
+![A multi-checkbox group showing four add-on options, two of which are ticked, each with a price badge](/public/field-checkboxes-frontend.png)
 
 When a customer ticks multiple boxes and adds the product to their cart, OptionBay validates that every submitted value exists in the predefined allowed options list (preventing tampering).
 

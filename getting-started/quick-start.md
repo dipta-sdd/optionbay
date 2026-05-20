@@ -8,7 +8,7 @@ Get OptionBay working on your store in under 10 minutes. This guide walks you fr
 
 By the end of this guide, you'll have a custom option group attached to a product. Customers will see it on the product page, directly above the **Add to Cart** button, with a text input for engraving and a radio button for gift wrapping with a $4.00 surcharge.
 
-![Quick start result — a product page showing the Engraving Text input and Gift Wrap radio buttons above the Add to Cart button](../public/quick-start-result.png)
+![Quick start result — a product page showing the Engraving Text input and Gift Wrap radio buttons above the Add to Cart button](/public/quick-start-result.png)
 
 ---
 
@@ -20,7 +20,7 @@ You'll see the [Option Groups list](/builder/option-groups) — a table showing 
 
 Click the **Add new group** button at the top of the page to open a blank [Addon Builder](/builder/addon-builder).
 
-![The Option Groups list with the "Add new group" button highlighted](../public/quick-start-step1.png)
+![The Option Groups list with the "Add new group" button highlighted](/public/quick-start-step1.png)
 
 ---
 
@@ -57,7 +57,7 @@ Look at the **Add Fields** sidebar on the right. Click any field type button to 
    - **Option 1:** Label `No` — leave the Price Type as `None`.
    - **Option 2:** Label `Yes` — expand the settings panel (click the chevron), set Price Type to `Flat Fee`, and enter `4.00` as the amount.
 
-![The Addon Builder with two configured fields — Text Input and Radio Buttons](../public/quick-start-step3.png)
+![The Addon Builder with two configured fields — Text Input and Radio Buttons](/public/quick-start-step3.png)
 
 ::: tip Explore All Field Types
 OptionBay supports 12 different field types — from color swatches to file uploads. See the full [Field Types Reference](/fields/input/text) to explore what's available.
@@ -76,7 +76,7 @@ You have two choices:
 
 For this quick start, select **"Apply to specific products, categories, or tags"**, then use the **Products** search field in the **Reach** section to find and select any product in your store.
 
-![The Assignment Rules panel with a specific product selected in the Reach section](../public/quick-start-step4.png)
+![The Assignment Rules panel with a specific product selected in the Reach section](/public/quick-start-step4.png)
 
 ::: info Learn More About Assignments
 Assignment Rules support powerful include/exclude logic. You can target entire categories, exclude individual products, and combine multiple rules.
@@ -100,7 +100,7 @@ Once saved successfully, a success toast notification will appear at the top of 
 
 Open the product you assigned the group to in Step 4. Navigate to the product's frontend page (the page your customers see). You should see your fields rendered directly above the **Add to Cart** button.
 
-![The frontend product page showing the Engraving Text input and Gift Wrap radio buttons](../public/quick-start-step6.png)
+![The frontend product page showing the Engraving Text input and Gift Wrap radio buttons](/public/quick-start-step6.png)
 
 ::: tip Not showing up?
 If the fields aren't visible, check these common issues:

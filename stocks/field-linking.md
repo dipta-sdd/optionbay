@@ -8,7 +8,7 @@ Any field — or individual choice within a choice field — can be linked to a 
 
 Open the field in the **Addon Builder** and switch to the **Stock** tab in the field configuration panel.
 
-![Stock tab inside the Addon Builder showing the Enable Stock toggle, inventory search, and Reduction Mode dropdown](../public/stock-field-link.png)
+![Stock tab inside the Addon Builder showing the Enable Stock toggle, inventory search, and Reduction Mode dropdown](/public/stock-field-link.png)
 
 - **Step 1 — Enable Stock Management:** Toggle the **Enable Stock Management** switch to on. This activates stock tracking for the field and opens the configuration inputs.
 - **Step 2 — Select or Create an Inventory Item:** Click the inventory search box. You can search existing Global Stock Items by typing their name, or create a brand-new item inline by typing a name and clicking the **Create new "[name]"** button.
@@ -17,7 +17,7 @@ Open the field in the **Addon Builder** and switch to the **Stock** tab in the f
   - **Per Line Item:** Surcharge stock always deducts exactly 1 item, regardless of how many products the customer orders.
   - **Custom Formula:** Allows you to define a mathematical expression to calculate the stock deduction dynamically.
 
-![Reduction Mode dropdown open showing options](../public/stock-field-link-reduction.png)
+![Reduction Mode dropdown open showing options](/public/stock-field-link-reduction.png)
 
 ---
 
@@ -27,7 +27,7 @@ For choice-based fields (Select Dropdown, Radio Buttons, Checkboxes, Color Swatc
 
 Open a choice field → expand an option → switch to the **Stock** sub-tab:
 
-![An individual choice option expanded inside the Addon Builder, showing the stock linking settings for that specific option](../public/stock-option-link.png)
+![An individual choice option expanded inside the Addon Builder, showing the stock linking settings for that specific option](/public/stock-option-link.png)
 
 This allows fine-grained control over your inventory:
 
@@ -58,7 +58,7 @@ Stock is deducted as a flat 1 unit per cart line item, ignoring the product quan
 Allows you to calculate stock deduction using a mathematical formula.
 
 - **Formula Configuration:** When you select "Custom Formula" from the Reduction Mode dropdown, a formula input field is revealed.
-- ![Custom Formula field visible under Reduction Mode](../public/stock-field-link-formula.png)
+- ![Custom Formula field visible under Reduction Mode](/public/stock-field-link-formula.png)
 - **Available Variables:**
   - **`qty`:** Represents the cart line item quantity of the product being ordered.
   - **`val`:** Represents the customer's entered numeric value. This variable is only valid on **Number Input** fields.
@@ -87,7 +87,7 @@ When a Global Stock Item reaches `0` (or falls below the required amount for a s
 - **Add to Cart Validation:** If a customer bypasses the frontend UI or attempts to submit an out-of-stock selection, OptionBay intercepts the request during the `woocommerce_add_to_cart_validation` hook and blocks the action with a clear error notice.
 - **Checkout Validation:** A final inventory check is run at checkout. If another customer completed their purchase and depleted the stock pool while the user had the item in their cart, the checkout process is halted with an error notice requesting the customer remove or adjust the option.
 
-![Frontend view showing an out of stock option selection disabled](../public/stock-frontend-outofstock.png)
+![Frontend view showing an out of stock option selection disabled](/public/stock-frontend-outofstock.png)
 
 ::: info Allow Backorders
 If **Allow Backorders** is enabled on the [Global Stock Item](/stocks/index), the option remains selectable on the product page and checkout is never blocked. The stock count is allowed to go into negative numbers (e.g. `-3`) to track how many items must be backordered.

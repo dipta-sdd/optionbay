@@ -2,7 +2,7 @@
 
 Radio buttons display all choices openly — customers click one to select it. Unlike a dropdown, every option is visible at once, making it easy to compare choices and price labels side by side.
 
-![Radio button field on a product page showing three choices, with price badges beside two of them, one radio selected](../../public/field-radio-frontend.png)
+![Radio button field on a product page showing three choices, with price badges beside two of them, one radio selected](/public/field-radio-frontend.png)
 
 ---
 
@@ -21,14 +21,14 @@ When you add a Radio Buttons field in the Addon Builder, you can configure the f
 
 ### General Settings
 
-![Backend view of General settings for Radio Buttons field](../../public/field-radio-general.png)
+![Backend view of General settings for Radio Buttons field](/public/field-radio-general.png)
 
 - **Label:** The main heading shown above the entire group of radio buttons. Used to identify the field group in the cart and order details.
 - **Description:** Additional helper text shown below the group. Useful for providing instructions (e.g. "Select one finish").
 
 ### Options Configuration
 
-![Backend view of Options block for Radio Buttons field](../../public/field-radio-options.png)
+![Backend view of Options block for Radio Buttons field](/public/field-radio-options.png)
 
 Within the main **Options** block, you define the actual radio choices by clicking the **Add Choice** button. For each choice card in the list, you have access to inline inputs and an expandable settings panel.
 
@@ -50,7 +50,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ### Validation
 
-![Backend view of Validation settings for Radio Buttons field](../../public/field-radio-validation.png)
+![Backend view of Validation settings for Radio Buttons field](/public/field-radio-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to click and select one of the radio buttons before they are allowed to add the product to their cart.
 
@@ -85,7 +85,7 @@ OptionBay includes multiple pricing strategies, including dynamic math formulas.
 
 ## Conditions
 
-![Backend view of Conditions tab for Radio Buttons field](../../public/field-radio-conditions.png)
+![Backend view of Conditions tab for Radio Buttons field](/public/field-radio-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this radio group based on what the customer has selected in other fields.
 
@@ -108,7 +108,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Radio Buttons field](../../public/field-radio-stock.png)
+![Backend view of Stock tab for Radio Buttons field](/public/field-radio-stock.png)
 
 Because a Radio Buttons field contains multiple distinct options, stock is typically linked **per option** instead of for the whole field.
 
@@ -145,7 +145,7 @@ You would configure the Radio Buttons field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![Radio button field on a product page showing three choices, with price badges beside two of them, one radio selected](../../public/field-radio-frontend.png)
+![Radio button field on a product page showing three choices, with price badges beside two of them, one radio selected](/public/field-radio-frontend.png)
 
 When a customer makes a selection and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing forged submissions.
 

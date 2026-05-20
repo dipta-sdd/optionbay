@@ -10,7 +10,7 @@ For a full walkthrough with examples, see [Conditional Visibility](/visibility/i
 
 Every field in the Addon Builder has a **Conditions** tab (also labelled "Visibility" in the UI). Open it by expanding any field and clicking the **Conditions** tab.
 
-![The Conditions tab inside an expanded field row in the Addon Builder, showing the Enable toggle, Action, Match Type, and two configured rules](../public/field-conditions-tab.png)
+![The Conditions tab inside an expanded field row in the Addon Builder, showing the Enable toggle, Action, Match Type, and two configured rules](/public/field-conditions-tab.png)
 
 ---
 

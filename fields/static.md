@@ -2,7 +2,7 @@
 
 Static Content outputs a fixed block of HTML directly on the product page. It is a **display-only** element — customers cannot interact with it, it produces no cart data, and it never appears on orders.
 
-![Static Content field on a product page showing a styled heading and an information callout above the product option fields](../../public/field-static-content-frontend.png)
+![Static Content field on a product page showing a styled heading and an information callout above the product option fields](/public/field-static-content-frontend.png)
 
 ---
 
@@ -22,7 +22,7 @@ When you add a Static Content field in the Addon Builder, you can configure the 
 
 ### General Settings
 
-![Backend view of General settings for Static Content field](../../public/field-static-general.png)
+![Backend view of General settings for Static Content field](/public/field-static-general.png)
 
 - **Label:** An internal, admin-only name used to identify this block within the Addon Builder. This label is **never shown on the frontend**.
 - **Content:** The raw HTML to render on the product page.
@@ -45,7 +45,7 @@ Because this field is display-only, it does not support several standard tabs:
 
 ## Conditions
 
-![Backend view of Conditions tab for Static Content field](../../public/field-static-conditions.png)
+![Backend view of Conditions tab for Static Content field](/public/field-static-conditions.png)
 
 Static Content fields **fully support** the Conditions tab. This is incredibly useful for showing dynamic warning banners or instructions based on what the customer has selected elsewhere.
 

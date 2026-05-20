@@ -2,7 +2,7 @@
 
 A native HTML `<select>` dropdown — customers pick **one option** from a collapsed list. Best when you have many choices and want to save vertical space on the product page.
 
-![A Select Dropdown field on a WooCommerce product page, dropdown open showing price-labelled options](../../public/field-select-frontend.png)
+![A Select Dropdown field on a WooCommerce product page, dropdown open showing price-labelled options](/public/field-select-frontend.png)
 
 ---
 
@@ -21,7 +21,7 @@ When you add a Select field in the Addon Builder, you can configure the followin
 
 ### General Settings
 
-![Backend view of General settings for Select field](../../public/field-select-general.png)
+![Backend view of General settings for Select field](/public/field-select-general.png)
 
 - **Label:** The text heading displayed above the dropdown. Used to identify the field in the cart and order details.
 - **Description:** Additional helper text shown below the dropdown. Useful for providing instructions.
@@ -29,7 +29,7 @@ When you add a Select field in the Addon Builder, you can configure the followin
 
 ### Options Configuration
 
-![Backend view of Options block for Select field](../../public/field-select-options.png)
+![Backend view of Options block for Select field](/public/field-select-options.png)
 
 Within the main **Options** block, you define the actual dropdown choices by clicking the **Add Choice** button. For each choice card in the list, you have access to inline inputs and an expandable settings panel.
 
@@ -51,7 +51,7 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 
 ### Validation
 
-![Backend view of Validation settings for Select field](../../public/field-select-validation.png)
+![Backend view of Validation settings for Select field](/public/field-select-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to pick a valid option (they cannot submit the form if the Placeholder is still selected).
 
@@ -80,7 +80,7 @@ OptionBay includes multiple pricing strategies, including dynamic math formulas.
 
 ## Conditions
 
-![Backend view of Conditions tab for Select field](../../public/field-select-conditions.png)
+![Backend view of Conditions tab for Select field](/public/field-select-conditions.png)
 
 Open the **Conditions** tab to dynamically show or hide this dropdown based on what the customer has selected in other fields.
 
@@ -103,7 +103,7 @@ Conditional logic lets you build dynamic, branching forms that adapt as the cust
 
 ## Stock
 
-![Backend view of Stock tab for Select field](../../public/field-select-stock.png)
+![Backend view of Stock tab for Select field](/public/field-select-stock.png)
 
 Because a Select field contains multiple distinct options, stock is typically linked **per option** instead of for the whole field.
 
@@ -141,7 +141,7 @@ You would configure the Select field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![A Select Dropdown field on a WooCommerce product page, dropdown open showing price-labelled options](../../public/field-select-frontend.png)
+![A Select Dropdown field on a WooCommerce product page, dropdown open showing price-labelled options](/public/field-select-frontend.png)
 
 When a customer makes a selection and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing malicious injections.
 
