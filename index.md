@@ -32,5 +32,5 @@ features:
   - icon: 🎯
     title: Smart Logic
     details: Target specific products and create interactive forms with conditional visibility logic.
-    link: /conditions/assignments
+    link: /assignments/index
 ---
