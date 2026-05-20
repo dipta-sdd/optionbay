@@ -2,7 +2,7 @@
 
 **Conditional Visibility** lets you show or hide fields based on what the customer has already selected in the same Option Group. Use it to build branching option flows that adapt in real time as the customer interacts.
 
-![Visibility tab inside the Addon Builder showing condition rules configured for a field](../public/visibility-tab.png)
+![Visibility tab inside the Addon Builder showing condition rules configured for a field](../public/field-conditions-tab.png)
 
 ---
 
