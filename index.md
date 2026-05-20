@@ -33,4 +33,12 @@ features:
     title: Smart Logic
     details: Target specific products and create interactive forms with conditional visibility logic.
     link: /assignments/index
+  - icon: 🎛️
+    title: Rich Field Types
+    details: Choose from 13 different field types including swatches, file uploads, and conditional inputs.
+    link: /fields/static
+  - icon: 🔄
+    title: Conditional Visibility
+    details: Show or hide fields dynamically based on the selections made by your customers.
+    link: /visibility/index
 ---
