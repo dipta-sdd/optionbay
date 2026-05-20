@@ -92,6 +92,10 @@ Open the **Stock** tab to link individual choices to their respective inventory 
 - **Enable Stock Management:** Toggle to activate inventory tracking.
 - **Per-Option Links:** You will see a row for every option you created. For each row, you can select an existing Global Stock Item and define the Reduction Mode (Per Item Quantity, Per Line Item, or Formula).
 
+::: warning Option-Level Stock Visibility
+If you enable **Stock Tracking** inside any individual choice card under the **General** tab, it activates option-level stock. When this happens, the field-level **Stock** tab shown above is automatically hidden in the backend to prevent conflicting inventory rules.
+:::
+
 ::: tip Global Stock Management
 OptionBay lets you share stock pools across multiple options and products, complete with cart-reservation to prevent overselling.
 

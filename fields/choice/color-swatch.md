@@ -2,7 +2,7 @@
 
 Color Swatches present choices as small colored squares or circles that customers click to select. Only one swatch can be active at a time (single choice). Each swatch maps to a hex color value; the visual color is rendered automatically by CSS.
 
-![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend.png)
+![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend-only.png)
 
 ---
 
@@ -19,15 +19,12 @@ Color Swatches present choices as small colored squares or circles that customer
 
 When you add a Color Swatch field in the Addon Builder, you can configure the following inputs across different sections:
 
-### General Settings & Display Style
+### General Settings
 
 ![Backend view of General settings for Color Swatch field](../../public/field-color-swatch-general.png)
 
 - **Label:** The main heading shown above the swatches. Used to identify the field group in the cart and order details.
 - **Description:** Additional helper text shown below the swatches. Useful for providing instructions.
-- **Display Style:** Choose how the swatches render visually.
-  - _Swatch Only:_ Just the colored box — the color's name appears only in a tooltip on hover.
-  - _Swatch + Label:_ The colored box with the text name printed clearly beside or below it.
 
 ### Options Configuration
 
@@ -57,6 +54,22 @@ Click the **downward chevron icon** on the right side of any choice card to expa
 ![Backend view of Validation settings for Color Swatch field](../../public/field-color-swatch-validation.png)
 
 - **Field is Required:** A checkbox toggle. When enabled, the customer is forced to click and select a color before they are allowed to add the product to their cart.
+
+---
+
+## Display Style
+
+![Backend view of Display Style settings for Color Swatch field](../../public/field-color-swatch-display-style.png)
+
+You can choose how swatches are presented visually on the frontend product page:
+
+- **Swatch Only:** Renders only the colored box or circle. The swatch name appears as a tooltip on hover.
+
+  ![Frontend view of Swatch Only Display Style](../../public/field-color-swatch-frontend-only.png)
+
+- **Swatch + Label:** Renders both the colored box/circle and its descriptive text label.
+
+  ![Frontend view of Swatch + Label Display Style](../../public/field-color-swatch-frontend-label.png)
 
 ---
 
@@ -123,6 +136,10 @@ Open the **Stock** tab to link individual colors to their respective inventory p
 - **Enable Stock Management:** Toggle to activate inventory tracking.
 - **Per-Option Links:** You will see a row for every color you created. For each row, you can select an existing Global Stock Item and define the Reduction Mode (Per Item Quantity, Per Line Item, or Formula).
 
+::: warning Option-Level Stock Visibility
+If you enable **Stock Tracking** inside any individual choice card under the **General** tab, it activates option-level stock. When this happens, the field-level **Stock** tab shown above is automatically hidden in the backend to prevent conflicting inventory rules.
+:::
+
 _Example:_ Link "Midnight Black" to an inventory item with 50 slots, and "Pearl White" to one with 200.
 
 ::: tip Global Stock Management
@@ -148,7 +165,7 @@ You would configure the Color Swatch field like this:
 **Frontend Product Page View:**
 With those settings, here is how the field renders on your product page for customers to interact with:
 
-![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend.png)
+![Color Swatch field on a product page showing 6 colored swatches, one selected with a checkmark overlay](../../public/field-color-swatch-frontend-only.png)
 
 When a customer clicks a swatch and adds the product to their cart, OptionBay validates that the submitted value exactly matches one of the allowed options you defined, preventing forged submissions.
 
